@@ -1,3 +1,4 @@
+/* Global styles and resets */
 * {
   margin: 0;
 }
@@ -7,7 +8,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -18,4 +19,46 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Header specific styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #121212;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header__left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.header__left input {
+  border: none;
+  width: 100%;
+  outline: none;
+  margin-left: 10px;
+  background-color: transparent;
+  color: black;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right h4 {
+  margin-left: 10px;
+  font-size: 16px;
 }

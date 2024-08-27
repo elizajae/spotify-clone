@@ -6,4 +6,19 @@
 
 .player__body {
   display: flex;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.sidebar {
+  flex: 0.02; /* Sidebar takes up 20% of the width */
+  min-width: 230px;
+}
+
+.body {
+  flex: 0.8; /* Body takes up 80% of the width */
+  background-color: #121212;
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
 }

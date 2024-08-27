@@ -12,11 +12,11 @@
 }
 
 .sidebarOption__icon {
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 35px;
+  height: 35px;
 }
 .sidebarOption > p {
-  margin-top: 10px;
   margin-left: 20px;
+  margin-bottom: 10px;
   font-size: 14px;
 }

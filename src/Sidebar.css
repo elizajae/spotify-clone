@@ -1,30 +1,61 @@
 .sidebar {
   height: 100vh;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px;
   flex: 0.2;
   min-width: 230px;
   background-color: #040404;
-}
-
-.sidebar > hr {
-  border: 1px solid #282828;
-  width: 90%;
-  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .sidebar__logo {
-  height: 100px;
-  width: auto;
-  padding: 10px;
-  margin: auto;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
 .sidebar__title {
-  margin-left: 5px;
-  padding: 5px;
+  margin-left: 10px;
+  padding: 5px 0;
   font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+
+.sidebar > hr {
+  border: none;
+  height: 1px;
+  background-color: #282828;
+  margin: 15px 0;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  height: 40px;
+  cursor: pointer;
+  transition: color 200ms ease-in;
+}
+
+.sidebarOption:hover {
+  color: white;
+}
+
+.sidebarOption__icon {
+  font-size: 24px;
+}
+
+.sidebarOption h4 {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sidebar__button {
@@ -39,4 +70,32 @@
 
 .sidebar__button:hover {
   color: white;
+}
+
+.sidebar {
+  overflow: hidden;
+}
+
+.playlists {
+  overflow-y: auto;
+  margin-bottom: 50px;
+}
+
+.playlists::-webkit-scrollbar {
+  width: 8px; /* Make the scrollbar thinner */
+}
+
+.playlists::-webkit-scrollbar-track {
+  background: #1c1c1c; /* Darker background for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.playlists::-webkit-scrollbar-thumb {
+  background-color: #535353; /* Custom thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 2px solid #1c1c1c; /* Adds a border around the thumb to match the track */
+}
+
+.playlists::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
 }
